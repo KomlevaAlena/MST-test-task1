@@ -14,9 +14,9 @@
 }
 
 .mine-header.header_fixed {
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
+    // left: 0;
     width: 1920px; /* Шапка на всю ширину */
     z-index: 1000;
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); Тень для эффекта "плавающей" шапки */
@@ -27,7 +27,7 @@
     max-width: 1200px; /* Ограничиваем ширину контента */
     padding: 14px 0 0 0;
     margin: 0;
-    margin-right: auto;
+    // margin-right: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
