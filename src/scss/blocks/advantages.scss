@@ -1,3 +1,43 @@
 .advantages {
     width: 1920px;
+    padding: 100px 0 0 0;
+    margin: 0 auto 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.advantages__image {
+    margin: 0;
+    padding: 0;
+    display: block;
+    background-color: rgba(40, 40, 41, 1);
+
+    &:first-of-type {
+        width: 622px;
+        height: 724px;
+    }
+
+    &:last-of-type {
+        width: 589px;
+        height: 724px;
+    }
+}
+
+.advantages__wrapper { 
+   width: 614px;
+   padding: 0 0 0 0;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.advantages__button {
+    width: 550px;
+    padding: 32px;
+    margin: 0;
 }
