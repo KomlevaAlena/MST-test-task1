@@ -1,0 +1,58 @@
+.hero-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: start;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-list__item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    &:not(:last-child) {
+        padding-bottom: 37px;
+    }
+}
+
+.hero-list__icon {
+    display: block;
+    margin: 0 17px 0 0;
+    padding: 0;
+    width: 39px;
+    height: 37px;
+    background-image: url('../public/img/svg/hero-check-arrow.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-list__description {
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 914px;
+    flex-grow: 1;
+    font-size: 24px;
+    line-height: 110%;
+
+    span {
+        display: inline-block;
+        font-family: "Prata", sans-serif;
+        font-size: 40px;
+        line-height: 150%;
+        width: max-content;
+        vertical-align: middle;
+    }
+}

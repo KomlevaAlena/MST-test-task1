@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Resident</title>
-    <meta name="description" content="Описание вашего сайта">
+    <meta name="description" content="Resident, space for living.">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="preload" href="fonts/Arial.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/Prata-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="styles/style.css"> <!-- Подключение CSS файла -->
+    <!-- <link rel="stylesheet" href="styles/style.css"> Подключение CSS файла -->
 </head>
 <body class="mine">
     <header class="mine-header">
@@ -33,14 +33,30 @@
     <main>
         <section class="hero">
             <h2 class="visually-hidden">About advantages.</h2>
-            <p class="hero__description">Information about residential complexes.</p>
-            <ul class="hero__list hero-list list">
-                <li class="hero-list__item">Get $10 000 for home upgrades or eco-features.</li>
-                <li class="hero-list__item">30% Energy Savings</li>
-                <li class="hero-list__item">17% More Green Space</li>
-            </ul>
-            <button class="order-button button">Order</button>
-            <picture>
+            <div class="hero__wrapper">
+              <p class="hero__description">Information about residential complexes</p>
+              <p class="hero__text">with us you get:</p>
+              <ul class="hero__list hero-list list">
+                  <li class="hero-list__item">
+                    <div class="hero-list__icon">
+                    </div>
+                    <p class="hero-list__description">Get&nbsp;<span>$10 000</span>&nbsp;for&nbsp;home&nbsp;upgrades&nbsp;or&nbsp;eco-features.</p>
+                  </li>
+                  <li class="hero-list__item">
+                    <div class="hero-list__icon"></div>
+                    <p class="hero-list__description"><span>30%</span>&nbsp;Energy&nbsp;Savings</p>
+                    </li>
+                  <li class="hero-list__item">
+                    <div class="hero-list__icon"></div>
+                    <p class="hero-list__description"><span>17%</span>&nbsp;More&nbsp;Green&nbsp;Space</p>
+                  </li>
+                  <li class="hero-list__item">
+                    <a class="hero-list__button order-button button" href="#">Order</a>
+                  </li>
+              </ul>
+              
+            </div>
+            <picture class="hero__image">
                 <source media="(max-width: 767px)" srcset="img/hero-2x.webp 1x, img/hero-2x.webp 2x" width="320" height="313">
                 <source media="(max-width: 1365px)" srcset="img/hero-2x.webp 1x, img/hero-2x.webp 2x" width="678" height="345">
                 <img src="img/hero-2x.webp" srcset="img/hero-2x.webp"  width="763" height="1009" alt="View of the residential complex building with a picnic area.">
