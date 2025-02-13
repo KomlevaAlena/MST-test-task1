@@ -1,14 +1,114 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app">
-      <div class="test">test</div>
-    </div>
-    <script type="module" src="/src/js/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Resident</title>
+    <meta name="description" content="Описание вашего сайта">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preload" href="fonts/Arial.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Prata-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="styles/style.css"> <!-- Подключение CSS файла -->
+</head>
+<body class="mine">
+    <header class="mine-header">
+        <h1 class="visually-hidden">Resident, space for living.</h1>
+        <nav class="mine-nav">
+            <a href="#" class="mine-nav__logo logo">Resident</a>
+            <ul class="mine-nav__list nav-list list">
+                <li class="nav-list__item">
+                    <a class="nav-list__link link" href="#">about us</a>
+                </li>
+                <li class="nav-list__item">
+                    <a class="nav-list__link link" href="#">product</a>
+                </li>
+                <li class="nav-list__item">
+                    <a class="nav-list__link link" href="#">call back</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2 class="visually-hidden">About advantages.</h2>
+            <p class="hero__description">Information about residential complexes.</p>
+            <ul class="hero__list hero-list list">
+                <li class="hero-list__item">Get $10 000 for home upgrades or eco-features.</li>
+                <li class="hero-list__item">30% Energy Savings</li>
+                <li class="hero-list__item">17% More Green Space</li>
+            </ul>
+            <button class="order-button button">Order</button>
+            <picture>
+                <source media="(max-width: 767px)" srcset="img/hero-2x.webp 1x, img/hero-2x.webp 2x" width="320" height="313">
+                <source media="(max-width: 1365px)" srcset="img/hero-2x.webp 1x, img/hero-2x.webp 2x" width="678" height="345">
+                <img src="img/hero-2x.webp" srcset="img/hero-2x.webp"  width="763" height="1009" alt="View of the residential complex building with a picnic area.">
+            </picture>
+        </section>
+        <section class="advantages">
+            <h2 class="visually-hidden">About advantages.</h2>
+            <!-- <p>Information about residential complexes.</p> -->
+            <ul class="advantages-list list">
+                <li>Improved Air Quality: Green spaces and trees in residential areas help reduce air pollution by absorbing carbon dioxide and releasing oxygen.</li>
+                <li>Enhanced Mental Well-being: Access to parks and greenery promotes relaxation, reduces stress, and improves overall mental health for residents.</li>
+                <li>Energy Efficiency: Strategically placed trees and vegetation provide natural shade, reducing the need for air conditioning and lowering energy costs.</li>
+                <li>Stronger Community Bonds: Green common areas encourage social interaction, fostering a sense of community and belonging among neighbors.</li>
+                <li>
+                    <a href="#" class="order-button button">Order</a>
+                </li>
+            </ul>
+        </section>
+        <section class="feedback-form">
+            <form action="#" method="post">
+                <h2>Write to us and we will contact you</h2>
+                <label for="name" class="visually-hidden">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Name">
+    
+                <label for="email" class="visually-hidden">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="E-mail">
+    
+                <label>
+                    <input type="checkbox" name="privacy-policy" required>
+                    I accept <a href="#">Privacy policy</a>
+                </label>
+    
+                <button type="submit">Submit Form</button> 
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="footer-list list">
+            <li><a href="#" class="footer-list__logo logo">Resident</a></li>
+            <li>
+                <ul><a href="#">Instagram</a></ul>
+                <ul><a href="#">TikTok</a></ul>
+                <ul><a href="#">linkedin</a></ul>
+                <ul><a href="#">Facebook</a></ul>
+                <ul><a href="#">Telegram</a></ul>
+                <ul><a href="#">Youtube</a></ul>
+            </li>
+            <li><a href="#" class="order-button button">order</a></li>
+        </ul>
+        <ul class="footer-list list">
+            <li class="footer-list__item">
+                <a class="footer-list__link link" href="#">About us</a>
+            </li>
+            <li class="footer-list__item">
+                <a class="footer-list__link link" href="#">Product</a>
+            </li>
+            <li class="footer-list__item">
+                <a class="footer-list__link link" href="#">Feedback</a>
+            </li>
+        </ul>
+        <div>
+            <span>&copy; 2024, Copyright.</span>
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms of Use</a>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/js/main.js"></script> <!-- Подключение JavaScript файла -->
+</body>
 </html>

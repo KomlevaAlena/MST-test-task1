@@ -1,0 +1,55 @@
+/* Шапка */
+
+.mine-header {
+    width: 1920px; /* Шапка на всю ширину */
+    padding: 30px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    background-color: rgba(34, 34, 34, 1);
+    z-index: 1000;
+}
+
+.mine-header.header_fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1920px; /* Шапка на всю ширину */
+    z-index: 1000;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); Тень для эффекта "плавающей" шапки */
+}
+
+.mine-nav {
+    width: 1180px;
+    max-width: 1200px; /* Ограничиваем ширину контента */
+    padding: 14px 0 0 0;
+    margin: 0;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+}
+
+.mine-nav__logo {
+    margin: 0 0 0 0;
+    margin-left: 162px;
+}
+
+.mine-nav__list {
+    min-width: min-content;
+    margin: 0 0 0 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+}
+
+.nav-list__link {
+    padding: 24px 14px;
+}

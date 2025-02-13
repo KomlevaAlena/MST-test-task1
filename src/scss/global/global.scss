@@ -1,0 +1,103 @@
+/* Общие стили */
+.mine {
+    background-color: rgba(40, 40, 41, 1);
+    color: rgba(255, 255, 255, 1);
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Arial", sans-serif;
+    font-size: 24px;
+    line-height: 140%;
+    font-weight: 400;
+  }
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: rgba(255, 255, 255, 1);
+  }
+
+.button {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(40, 40, 41, 1);
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    font-family: "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    /* padding: 10px 40px; */
+  }
+
+.logo {
+    color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 0);
+    cursor: pointer;
+    display: block;
+    font-family: "Prata", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 150%;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+        color: rgba(255, 255, 255, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0);
+    }
+    &:focus {
+        color: rgba(255, 255, 255, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    &:active {
+        color: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(255, 255, 255, 0);
+        border-bottom: 1px solid rgba(255, 255, 255, 1);
+    }
+    &:disabled{
+        color: rgba(255, 255, 255, 0.25);
+        border: 1px solid rgba(255, 255, 255, 0);
+    }
+  }
+
+.link {
+    color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 0);
+    cursor: pointer;
+    display: block;
+    font-family: "Arial-Italic", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+        color: rgba(255, 255, 255, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0);
+    }
+    &:focus {
+        color: rgba(255, 255, 255, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    &:active {
+        color: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(255, 255, 255, 1);
+    }
+    &:disabled{
+        color: rgba(255, 255, 255, 0.25);
+        border: 1px solid rgba(255, 255, 255, 0);
+    }
+  }
+  

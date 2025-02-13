@@ -1,6 +1,11 @@
 @use 'normalize.css';
 @use 'variables.scss';
 
+@use 'global/fonts.scss';
+@use 'global/global.scss';
+
+@use 'blocks/main-nav.scss';
+
 // #app {
 //     width: 100vw;
 //     height: 100vh;
