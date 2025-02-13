@@ -37,6 +37,23 @@
     text-align: center;
     text-decoration: none;
     /* padding: 10px 40px; */
+
+    &:hover {
+        color: rgba(40, 40, 41, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0);
+    }
+    &:focus {
+        color: rgba(40, 40, 41, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0);
+    }
+    &:active {
+        color: rgba(164, 144, 125, 1);
+        border: 1px solid rgba(255, 255, 255, 0);
+    }
+    &:disabled{
+        color: rgba(40, 40, 41, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0);
+    }
   }
 
 .logo {
