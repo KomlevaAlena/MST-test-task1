@@ -24,10 +24,18 @@
         @include small-desktop {
             max-width: 1200px;
         }
+
+        @mixin tablet {
+            max-width: 768px;
+        }
     }
 
     @include small-desktop {
         max-width: 1200px;
+    }
+
+    @include tablet {
+        max-width: 768px;
     }
   }
 
@@ -53,7 +61,6 @@
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
-    /* padding: 10px 40px; */
 
     &:hover {
         color: rgba(40, 40, 41, 0.5);
@@ -70,6 +77,10 @@
     &:disabled{
         color: rgba(40, 40, 41, 0.15);
         border: 1px solid rgba(255, 255, 255, 0);
+    }
+
+    @include tablet {
+        max-width: 768px;
     }
   }
 

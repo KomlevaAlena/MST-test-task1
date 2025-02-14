@@ -47,6 +47,10 @@
     @include small-desktop {
       max-width: 1200px;
   }
+
+    @include tablet {
+      max-width: 768px;
+  }
 }
 
 .feedback__wrapper {

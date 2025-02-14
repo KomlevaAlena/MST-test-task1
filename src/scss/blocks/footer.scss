@@ -60,4 +60,8 @@
     @include small-desktop {
         width: 1121px;
     }
+
+    @include tablet {
+        max-width: 768px;
+    }
 }
