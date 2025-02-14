@@ -1,0 +1,95 @@
+.social-list {
+    width: 352px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    // padding: 40px 183px 40px 160px;
+    gap: 32px;
+}
+
+
+
+.link-instagram {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-color: rgba(213, 201, 190, 1);
+    mask-image: url('../public/img/svg/inst.svg');
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    transition: background-color 0.3s ease;
+}
+
+.link-linkedin {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-color: rgba(213, 201, 190, 1);
+    mask-image: url('../public/img/svg/link.svg');
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    transition: background-color 0.3s ease;
+}
+
+.link-tiktok {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-color: rgba(213, 201, 190, 1);
+    mask-image: url('../public/img/svg/tiktok.svg');
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    transition: background-color 0.3s ease;
+}
+
+.link-facebook {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-color: rgba(213, 201, 190, 1);
+    mask-image: url('../public/img/svg/face.svg');
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    transition: background-color 0.3s ease;
+}
+
+.link-telegram {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-color: rgba(213, 201, 190, 1);
+    mask-image: url('../public/img/svg/telegram.svg');
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    transition: background-color 0.3s ease;
+}
+
+.link-youtube {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-color: rgba(213, 201, 190, 1);
+    mask-image: url('../public/img/svg/youtube.svg');
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    transition: background-color 0.3s ease;
+}
+
+.social-list__link {
+    padding: 0;
+    margin: 0;
+
+    &:hover {
+        background-color: rgba(213, 201, 190, 0.5);
+    }
+    
+    &:focus {
+        background-color: rgba(213, 201, 190, 0.5);
+    }
+    
+    &:active {
+        background-color: rgba(255, 255, 255, 1);
+    }   
+}
