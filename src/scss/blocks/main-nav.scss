@@ -1,7 +1,8 @@
-/* Шапка */
+@use '../variables' as *;
 
+/* Шапка */
 .mine-header {
-    width: 1920px; /* Шапка на всю ширину */
+    width: 1920px;
     padding: 30px 0;
     margin: 0 auto;
     display: flex;
@@ -11,23 +12,28 @@
     align-items: center;
     background-color: rgba(34, 34, 34, 1);
     z-index: 1000;
+
+    @include small-desktop {
+        max-width: 1200px;
+    }
 }
 
 .mine-header.header_fixed {
     position: sticky;
     top: 0;
-    // left: 0;
-    width: 1920px; /* Шапка на всю ширину */
+    width: 1920px;
     z-index: 1000;
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); Тень для эффекта "плавающей" шапки */
+
+    @include small-desktop {
+        max-width: 1200px;
+    }
 }
 
 .mine-nav {
     width: 1180px;
-    max-width: 1200px; /* Ограничиваем ширину контента */
+    max-width: 1200px;
     padding: 14px 0 0 0;
     margin: 0;
-    // margin-right: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -38,6 +44,10 @@
 .mine-nav__logo {
     margin: 0 0 0 0;
     margin-left: 162px;
+
+    @include small-desktop {
+        margin-left: 100px;
+    }
 }
 
 .mine-nav__list {

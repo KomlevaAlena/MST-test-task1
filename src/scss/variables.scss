@@ -15,30 +15,42 @@ $color-primory: #666;
 
 // Desktop first
 
+// Переменные для breakpoints
+$small-desktop-max: 1920px;
+$small-desktop-min: 1201px;
+
+$tablet-max: 1200px;
+$tablet-min: 769px;
+
+$mobile-max: 768px;
+$mobile-min: 320px;
+
+$small-mobile-max: 320px;
+
 //(1920px - 1200px)
-@mixin desktop {
-    @media (max-width: 1920px) and (min-width: 1201px) {
+@mixin small-desktop {
+    @media (max-width: $small-desktop-max) and (min-width: $small-desktop-min) {
         @content;
     }
 }
 
 //(1200px - 768px)
 @mixin tablet {
-    @media (max-width: 1200px) and (min-width: 769px) {
+    @media (max-width: $tablet-max) and (min-width: $tablet-min) {
         @content;
     }
 }
 
 //(768px - 320px)
 @mixin mobile {
-    @media (max-width: 768px) and (min-width: 320px) {
+    @media (max-width: $mobile-max) and (min-width: $mobile-min) {
         @content;
     }
 }
 
 //(меньше 320px)
 @mixin small-mobile {
-    @media (max-width: 320px) {
+    @media (max-width: $small-mobile-max) {
         @content;
     }
 }

@@ -1,3 +1,5 @@
+@use '../variables' as *;
+
 .hero {
     width: 1920px;
     padding: 0;
@@ -8,24 +10,44 @@
     justify-content: left;
     align-content: start;
     background-color: rgba(34, 34, 34, 1);
+
+    @include small-desktop {
+        max-width: 1200px;
+    }
 }
 
 .hero__wrapper {
     padding: 0 0 0 162px;
     margin: 0 auto 0 0;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: start;
+    display: grid;
+    grid-template-columns: 995px 763px;
+    grid-template-rows: auto;
+    // flex-direction: column;
+    // flex-wrap: wrap;
+    // justify-content: start;
+
+    @include small-desktop {
+        padding: 0 0 0 100px;
+        margin: 0;
+        grid-template-columns: 600px 500px;
+    }
 }
 
 .hero__image {
     width: 763px;
-    height: 1009px;
+    height: auto;
     margin: 0 0 0 0;
     padding: 0;
     display: block;
     background-color: rgba(40, 40, 41, 1);
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+
+    @include small-desktop {
+        width: 500px;
+        height: auto;
+        grid-row: 1 / 2;
+    }
 }
 
 .hero__description {
@@ -37,6 +59,10 @@
     font-size: 80px;
     font-weight: 400;
     line-height: 120%;
+
+    @include small-desktop {
+        max-width: 600px;
+    }
 }
 
 .hero__text {
@@ -47,4 +73,9 @@
     line-height: 120%;
     margin: 0;
     padding: 0 0 64px 0;
+
+    @include small-desktop {
+        grid-column: 1 /3;
+        margin: 0 auto;
+    }
 }

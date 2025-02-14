@@ -1,3 +1,6 @@
+// @use 'variables.scss';
+@use '../variables' as *;
+
 /* Общие стили */
 .mine {
     background-color: rgba(40, 40, 41, 1);
@@ -17,6 +20,14 @@
 
     main {
         flex: 1;
+
+        @include small-desktop {
+            max-width: 1200px;
+        }
+    }
+
+    @include small-desktop {
+        max-width: 1200px;
     }
   }
 

@@ -1,3 +1,5 @@
+@use '../variables' as *;
+
 .advantages {
     width: 1920px;
     padding: 100px 0 50px 0;
@@ -6,6 +8,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @include small-desktop {
+        max-width: 1200px;
+    }
 }
 
 .advantages__image {
@@ -17,11 +23,24 @@
     &:first-of-type {
         width: 622px;
         height: 724px;
+
+        @include small-desktop {
+            width: 586px;
+            height: 682px;
+         }
     }
 
     &:last-of-type {
         width: 589px;
         height: 724px;
+
+        @include small-desktop {
+           display: none;
+        }
+    }
+
+    @include small-desktop {
+        max-width: 1200px;
     }
 }
 
@@ -34,10 +53,18 @@
    flex-wrap: wrap;
    justify-content: space-between;
    align-items: center;
+
+   @include small-desktop {
+    width: 600px;
+ }
 }
 
 .advantages__button {
     width: 550px;
     padding: 32px;
     margin: 0;
+
+    @include small-desktop {
+        width: 500px;
+     }
 }
