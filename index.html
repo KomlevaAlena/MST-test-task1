@@ -97,22 +97,39 @@
             <img src="img/advantages-right-1x.webp" srcset="img/advantages-right-2x.webp"  width="589" height="724" alt="View of the residential complex building with a picnic area.">
           </picture>
         </section>
-        <section class="feedback-form">
-            <form action="#" method="post">
-                <h2>Write to us and we will contact you</h2>
-                <label for="name" class="visually-hidden">Name:</label>
-                <input type="text" id="name" name="name" required placeholder="Name">
+        <section class="feedback">
+          <div class="feedback__wrapper">
+            <form class="feedback__form" action="#" method="post">
+                <h2 class="feedback__title">Write to us and we will contact you</h2>
+                <label class="visually-hidden" for="name">Name:</label>
+                <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                required 
+                placeholder="Name" 
+                maxlength="100" 
+                pattern="[A-Za-zА-Яа-яЁё\s]+" 
+                title="Please use only Cyrillic or Latin alphabet.">
     
-                <label for="email" class="visually-hidden">Email:</label>
-                <input type="email" id="email" name="email" required placeholder="E-mail">
+                <label class="visually-hidden" for="email">Email:</label>
+                <input type="email" 
+                id="email" 
+                name="email" 
+                required 
+                placeholder="E-mail" 
+                maxlength="100" 
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" 
+                title="Please enter a valid email address (Latin letters only).">
     
-                <label>
+                <label class="feedback__privacy-policy">
                     <input type="checkbox" name="privacy-policy" required>
-                    I accept <a href="#">Privacy policy</a>
+                    I accept&nbsp;<a href="#">Privacy policy</a>
                 </label>
     
-                <button type="submit">Submit Form</button> 
+                <button class="feedback__button button" type="submit">Send</button> 
             </form>
+          </div>
         </section>
     </main>
 
