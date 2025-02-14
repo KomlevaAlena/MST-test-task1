@@ -1,3 +1,5 @@
+@use '../variables' as *;
+
 .footer-social {
     width: 1577px;
     display: flex;
@@ -6,6 +8,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 40px 183px 19px 160px;
+
+    @include small-desktop {
+        width: 937px;
+        padding: 40px 143px 19px 120px
+    }
 }
 
 .footer-social__button {

@@ -1,3 +1,5 @@
+@use '../variables' as *;
+
 .feedback {
     position: relative;
     width: 1920px;
@@ -7,7 +9,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    // background-color: rgba(255, 255, 255, 1);
 
     &::before {
         position: absolute;
@@ -37,7 +38,15 @@
         mask-image: radial-gradient(white, black);
         z-index: 15;
         clip-path: inset(0 0 100px 0);
+
+        @include small-desktop {
+          background-position: 110% 50%;
+      }
     }
+
+    @include small-desktop {
+      max-width: 1200px;
+  }
 }
 
 .feedback__wrapper {
@@ -98,6 +107,10 @@
         &:disabled{
             color: rgba(40, 40, 41, 0.15);
             border: 1px solid rgba(56, 83, 93, 0.15);
+        }
+
+        @include small-desktop {
+          width: 460px;
         }
     }
 }
@@ -242,5 +255,9 @@
     padding: 32px;
     margin: 0 0 0 0;
     width: 749px;
+
+    @include small-desktop {
+      width: 670px;
+    }
   }
   
