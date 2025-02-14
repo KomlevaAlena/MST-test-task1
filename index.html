@@ -121,10 +121,11 @@
                 maxlength="100" 
                 pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" 
                 title="Please enter a valid email address (Latin letters only).">
-    
-                <label class="feedback__privacy-policy">
-                    <input type="checkbox" name="privacy-policy" required>
-                    I accept&nbsp;<a href="#">Privacy policy</a>
+
+                <label class="feedback__privacy-policy control">
+                  <input class="control-input" type="checkbox" name="privacy-policy" required>
+                  <span class="control-mark"></span>
+                  I accept&nbsp;<a href="#">Privacy policy</a>
                 </label>
     
                 <button class="feedback__button button" type="submit">Send</button> 
