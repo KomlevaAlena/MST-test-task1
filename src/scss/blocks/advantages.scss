@@ -17,6 +17,12 @@
         max-width: 768px;
         padding: 0 0 50px 0;
     }
+
+    @include mobile {
+        width: 320px;
+        margin: 0 auto;
+        padding: 0 0 15px 0;
+    }
 }
 
 .advantages__image {
@@ -38,6 +44,10 @@
             width: 768px;
             height: 894px;
          }
+
+         @include mobile {
+            display: none;
+        }
     }
 
     &:last-of-type {
@@ -53,10 +63,19 @@
             width: 768px;
             height: 944px;
          }
+
+         @include mobile {
+            width: 320px;
+            height: 393px;
+        }
     }
 
     @include small-desktop {
         max-width: 1200px;
+    }
+
+    @include mobile {
+        width: 320px;
     }
 }
 
@@ -77,6 +96,11 @@
     @include tablet {
         margin: 0 auto;
     }
+
+    @include mobile {
+        width: 320px;
+        margin: 0 auto;
+    }
 }
 
 .advantages__button {
@@ -90,5 +114,10 @@
 
      @include tablet {
         margin-bottom: 30px;
+    }
+
+    @include mobile {
+        margin: 15px auto 10px;
+        width: 250px;
     }
 }

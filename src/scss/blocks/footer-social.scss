@@ -21,6 +21,16 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
       }
+
+      @include mobile {
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+      }
 }
 
 .footer-social__item {
@@ -42,6 +52,14 @@
             grid-row: 2 / 3;
             margin: 0 auto;
             padding-top: 10px;
+        }
+    }
+
+    @include mobile {
+        padding-bottom: 15px;
+
+        &:last-of-type {
+            padding-bottom: 15px;
         }
     }
 }

@@ -30,6 +30,10 @@
       @include tablet {
         max-width: 768px;
       }
+
+      @include mobile {
+        max-width: 320px;
+      }
 }
 
 .footer__copyright {
@@ -68,4 +72,10 @@
     @include tablet {
         max-width: 728px;
     }
+
+    @include mobile {
+        max-width: 320px;
+        flex-direction: column;
+        padding: 10px 0 30px;
+      }
 }

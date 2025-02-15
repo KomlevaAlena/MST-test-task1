@@ -1,3 +1,5 @@
+@use '../variables' as *;
+
 .footer-nav {
     display: flex;
     flex-direction: row;
@@ -5,4 +7,14 @@
     justify-content: center;
     align-items: center;
     gap: 60px;
+
+    @include mobile {
+        gap: 20px;
+      }
+}
+
+.footer-nav__link {
+    @include mobile {
+        font-size: 12px;
+      }
 }
