@@ -18,6 +18,10 @@
     @include tablet {
         max-width: 768px;
     }
+
+    @include mobile {
+        max-width: 320px;
+    }
 }
 
 .hero__wrapper {
@@ -26,9 +30,6 @@
     display: grid;
     grid-template-columns: 995px 763px;
     grid-template-rows: auto;
-    // flex-direction: column;
-    // flex-wrap: wrap;
-    // justify-content: start;
 
     @include small-desktop {
         padding: 0 0 0 100px;
@@ -39,6 +40,16 @@
     @include tablet {
         padding: 0 0 25px 0;
         grid-template-columns: auto auto;
+    }
+
+    @include mobile {
+        max-width: 320px;
+        padding: 0;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: start;
     }
 }
 
@@ -64,6 +75,11 @@
         grid-column: 1 / 3;
         grid-row: 1 / 2;
     }
+
+    @include mobile {
+        width: 320px;
+        height: auto;
+    }
 }
 
 .hero__description {
@@ -86,6 +102,13 @@
         grid-column: 1 / 3;
         grid-row: 2 / 3;
     }
+
+    @include mobile {
+        width: 290px;
+        margin: 0 auto;
+        padding: 55px 0 25px 0;
+        font-size: 40px;
+    }
 }
 
 .hero__text {
@@ -106,5 +129,12 @@
         padding: 0 0 64px 50px;
         grid-column: 1 / 3;
         grid-row: 3 / 4;
+    }
+
+    @include mobile {
+        width: 290px;
+        height: auto;
+        font-size: 24px;
+        margin: 0 auto;
     }
 }

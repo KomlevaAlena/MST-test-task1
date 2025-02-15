@@ -42,15 +42,21 @@ $small-mobile-max: 320px;
 }
 
 //(768px - 320px)
+
 @mixin mobile {
-    @media (max-width: $mobile-max) and (min-width: $mobile-min) {
+    @media (max-width: $mobile-max) {
         @content;
     }
 }
+// @mixin mobile {
+//     @media (max-width: $mobile-max) and (min-width: $mobile-min) {
+//         @content;
+//     }
+// }
 
 //(меньше 320px)
-@mixin small-mobile {
-    @media (max-width: $small-mobile-max) {
-        @content;
-    }
-}
+// @mixin small-mobile {
+//     @media (max-width: $small-mobile-max) {
+//         @content;
+//     }
+// }
