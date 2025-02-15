@@ -15,6 +15,7 @@
 
     @include tablet {
         max-width: 768px;
+        padding: 0 0 50px 0;
     }
 }
 
@@ -32,6 +33,11 @@
             width: 586px;
             height: 682px;
          }
+
+         @include tablet {
+            width: 768px;
+            height: 894px;
+         }
     }
 
     &:last-of-type {
@@ -41,6 +47,12 @@
         @include small-desktop {
            display: none;
         }
+
+        @include tablet {
+            display: block;
+            width: 768px;
+            height: 944px;
+         }
     }
 
     @include small-desktop {
@@ -60,7 +72,11 @@
 
    @include small-desktop {
     width: 600px;
- }
+    }
+
+    @include tablet {
+        margin: 0 auto;
+    }
 }
 
 .advantages__button {
@@ -71,4 +87,8 @@
     @include small-desktop {
         width: 500px;
      }
+
+     @include tablet {
+        margin-bottom: 30px;
+    }
 }

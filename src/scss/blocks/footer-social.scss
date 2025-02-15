@@ -13,6 +13,37 @@
         width: 937px;
         padding: 40px 143px 19px 120px
     }
+
+    @include tablet {
+        max-width: 728px;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+      }
+}
+
+.footer-social__item {
+    @include tablet {
+        &:first-of-type {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            margin: 0 auto;
+        }
+
+        &:last-of-type {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            margin: 0 auto;
+        }
+
+        &:nth-of-type(2n) {
+            grid-column: 1 / 3;
+            grid-row: 2 / 3;
+            margin: 0 auto;
+            padding-top: 10px;
+        }
+    }
 }
 
 .footer-social__button {

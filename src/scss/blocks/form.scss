@@ -42,6 +42,10 @@
         @include small-desktop {
           background-position: 110% 50%;
       }
+
+        @include tablet {
+          display: none;
+      }
     }
 
     @include small-desktop {
@@ -116,6 +120,15 @@
         @include small-desktop {
           width: 460px;
         }
+
+        @include tablet {
+          max-width: 525px;
+        }
+    }
+
+    @include tablet {
+      max-width: 614px;
+      padding: 72px 77px;
     }
 }
 
@@ -127,6 +140,10 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @include tablet {
+      max-width: 614px;
+    }
 }
 
 .feedback__title {
@@ -139,6 +156,10 @@
     font-weight: 400;
     line-height: 110%;
     color: rgba(56, 83, 93, 1);
+
+    @include tablet {
+      max-width: 614px;
+    }
 }
 
 .feedback__privacy-policy {
@@ -262,6 +283,10 @@
 
     @include small-desktop {
       width: 670px;
+    }
+
+    @include tablet {
+      max-width: 600px;
     }
   }
   

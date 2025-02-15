@@ -37,7 +37,7 @@
     }
 
     @include tablet {
-        padding: 0;
+        padding: 0 0 25px 0;
         grid-template-columns: auto auto;
     }
 }

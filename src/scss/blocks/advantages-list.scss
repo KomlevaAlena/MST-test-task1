@@ -37,6 +37,12 @@
             padding-top: 30px;
          }
     }
+
+    &:last-child {
+        @include tablet {
+            padding-bottom: 30px;
+        }
+    }
 }
 
 .advantages-list__icon {
